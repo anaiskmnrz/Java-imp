@@ -26,6 +26,10 @@ public class DeclarationApp {
 		String randomString = "Voici le résultat d'un calcul:\n1+5=6";
 		
 		System.out.println(randomString);
+		for (int j = 0; j < 10; ++j) {
+			System.out.println(j);
+		}
 	}
 
+	
 }
