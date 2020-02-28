@@ -8,6 +8,7 @@ public class RechercheMax {
 		
 		/* Recherche du plus grand élément de array et affichage de celui-ci. */
 		int max = -20; // je prends un nombre pas dans array et plus petit que tous.
+		
 		for (int i = 0; i < array.length; ++i) {
 			if (array[i] > max) {
 				max = array[i];
