@@ -1,3 +1,4 @@
+package fr.algorithmie;
 
 public class FirstLast6 {
 
