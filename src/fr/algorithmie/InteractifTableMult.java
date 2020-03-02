@@ -16,7 +16,8 @@ public class InteractifTableMult {
 			nb = saisie.nextInt();
 		}
 		
-		System.out.println("\n Voici la table de multiplication de " + nb + " : ");
+		/* Affiche la table de multiplication de ce nombre. */
+		System.out.println("\nVoici la table de multiplication de " + nb + " : ");
 		System.out.println(nb + " * 1 = " + nb*1);
 		System.out.println(nb + " * 2 = " + nb*2);
 		System.out.println(nb + " * 3 = " + nb*3);
