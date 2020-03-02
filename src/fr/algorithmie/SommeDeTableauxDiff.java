@@ -9,19 +9,53 @@ public class SommeDeTableauxDiff {
 		
 		int array1_length = array1.length;
 		int array2_length = array2.length;
-		int somme_length = 0;
 		
-		if (array1_length > array2_length) {
-			somme_length = array2_length;
+		int diff_array = array1_length-array2_length;
+		
+		
+		/* Si le plus grand tableau est le array1. */
+		if (diff_array >= 0) {
+			int[] arraySomme = new int[array1_length];
+			
+			/* Addition des deux jusqu'à la taille de array2. */
+			for (int i = 0; i < array2_length; ++i) {
+				arraySomme[i] = array1[i] + array2[i];
+			}
+			
+			/* Ajout des nombres en plus de array1. */
+			for (int i = array2_length; i < array1_length; ++i) {
+				arraySomme[i] = array1[i];
+			}
+			
+			/* Affichage de la somme des deux tableaux. */
+			System.out.print("Somme des deux tableaux dans un nouveau tableau: ");
+			for (int i = 0; i < array1_length; ++i) {
+				System.out.print(arraySomme[i] + " ");
+			}
+			
+		/* Si le plus grand tableau est le array2. */	
 		} else {
-			somme_length = array1_length;
+			int[] arraySomme = new int[array2_length];
+			
+			/* Addition des deux jusqu'à la taille de array1. */
+			for (int i = 0; i < array1_length; ++i) {
+				arraySomme[i] = array1[i] + array2[i];
+			}
+			
+			/* Ajout des nombres en plus de array2. */
+			for (int i = array1_length; i < array2_length; ++i) {
+				arraySomme[i] = array2[i];
+			}
+			
+			/* Affichage de la somme des deux tableaux. */
+			System.out.print("Somme des deux tableaux dans un nouveau tableau: ");
+			for (int i = 0; i < array2_length; ++i) {
+				System.out.print(arraySomme[i] + " ");
+			}
 		}
 		
-		int[] arraySomme = new int[somme_length];
-		for (int i = 0; i < somme_length; ++i) {
-			//ajoute la somme jusquà plus petite longueur
-		}
-//complète avec somme avecdes 0 à finir lundi.
+		
+		
 	}
 
 }
