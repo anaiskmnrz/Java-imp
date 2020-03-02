@@ -7,9 +7,9 @@ public class FirstLast6 {
 		int array_length = array.length;
 	
 		boolean bool = false;
-		/* Renvoie true si le tableau a au moins 1 élément et si le dernier ou premier élément vaut 6. */
 		
-		if ((array_length >= 1) && ((array[0] == 6) || (array[array_length-1] == 6)) ) {
+		/* Renvoie true si le tableau a au moins 1 élément et si le dernier ou premier élément vaut 6. */		
+		if ( (array_length >= 1) && ((array[0] == 6) || (array[array_length-1] == 6)) ) {
 			bool = true;
 		}
 
